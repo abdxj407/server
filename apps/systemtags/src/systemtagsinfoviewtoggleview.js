@@ -76,6 +76,7 @@
 				} else {
 					this._systemTagsInfoView.show()
 					this._systemTagsInfoView.openDropdown()
+					this.$el.hide()
 				}
 			},
 
@@ -88,6 +89,10 @@
 				this.$el.html(this.template())
 
 				return this
+			},
+
+			setFileInfo: function() {
+
 			},
 
 		})

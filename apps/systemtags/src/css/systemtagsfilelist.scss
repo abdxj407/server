@@ -12,12 +12,26 @@
 	margin-left: 10px;
 }
 
-#app-sidebar .mainFileInfoView .tag-label {
+#app-sidebar .app-sidebar-header__action .tag-label {
 	cursor: pointer;
-	padding: 13px;
+	padding: 13px 0;
+	display: flex;
+	color: var(--color-text-light);
+	position: relative;
+	margin-top: -20px;
 }
 
-#app-sidebar .mainFileInfoView .icon-tag {
+#app-sidebar .app-sidebar-header__action .systemTagsInfoView {
+	position: relative;
+	margin-top: -20px;
+}
+
+#app-sidebar .app-sidebar-header__action .icon-tag {
 	opacity: .5;
 	vertical-align: middle;
+}
+
+#app-sidebar .app-sidebar-header--compact .app-sidebar-header__action .tag-label,
+#app-sidebar .app-sidebar-header--compact .app-sidebar-header__action .systemTagsInfoView {
+	left: 75px;
 }
