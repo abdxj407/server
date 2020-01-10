@@ -873,6 +873,11 @@ class ShareAPIController extends OCSController {
 		$shares = [];
 		foreach ($nodes as $node) {
 			$getShares = $this->getFormattedShares($owner, $node, false, true);
+
+			$getShares = array_filter($getShares, function (array $share) {
+				return $share['share_type'] !== IShare::TYPE_LINK;
+			});
+
 			$this->mergeFormattedShares($shares, $getShares);
 		}
 
