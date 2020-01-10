@@ -226,7 +226,7 @@ class ShareAPIController extends OCSController {
 			// "share_with" and "share_with_displayname" for passwords of link
 			// shares was deprecated in Nextcloud 15, use "password" instead.
 			$result['share_with'] = $share->getPassword();
-			$result['share_with_displayname'] = $share->getPassword();
+			$result['share_with_displayname'] = ' (' . $this->l->t('shared link') . ')';
 
 			$result['password'] = $share->getPassword();
 
