@@ -201,7 +201,7 @@
 						:disabled="saving"
 						class="share-link-password-talk-checkbox"
 						@change="queueUpdate('sendPasswordByTalk')">
-						{{ t('files_sharing', 'Password protect by Talk') }}
+						{{ t('files_sharing', 'Video verification') }}
 					</ActionCheckbox>
 
 					<!-- expiration date -->
